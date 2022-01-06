@@ -1,7 +1,5 @@
-.App{
-  background-image: url('../src/images/back.png');
-  background-size: cover;
-}
-.daily-for{
-  display: flex;
+.daily-for {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1%;
 }
