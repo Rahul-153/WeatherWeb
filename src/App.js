@@ -48,7 +48,7 @@ function App() {
         <Route exact path="/daily">
           <div className='daily-for'>
             {data_2.daily.map((e, index) => {
-              if (index != 0)
+              if (index !== 0)
                 return <DailyCard apikey={API_key} humidity={e.humidity} tempMin={e.temp.min} tempMax={e.temp.max} icon={e.weather[0].icon} wind={e.wind_speed} lat={lat} lon={lon} sunrise={e.sunrise} sunset={e.sunset} desc={e.weather[0].description} dt={e.dt} key={index} />
             })}
           </div>
