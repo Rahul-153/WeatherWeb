@@ -1,16 +1,30 @@
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.single {
     margin-left: 40%;
     margin-top: 10rem;
     width: 20%;
-    background-color: rgba(0, 0, 0, .5);
+    background-size: cover;
+    font-weight: 250;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .4);
     color: #fff;
     border-radius: 2rem;
 }
 
-.single {
-    background-size: cover;
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .single {
+        width: 90%;
+        margin-left: 1rem;
+    }
 }

@@ -1,0 +1,17 @@
+.date-container {
+    font-weight: 250;
+    padding-left: 5%;
+}
+
+.date-container .time {
+    font-size: 60px;
+}
+
+.date-container #am-pm {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.date-container .date {
+    font-size: 20px;
+}

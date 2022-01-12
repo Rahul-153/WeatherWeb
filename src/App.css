@@ -1,5 +1,15 @@
+.home {
+    display: flex;
+}
+
 .daily-for {
     display: flex;
     flex-wrap: wrap;
     padding: 1%;
+}
+
+@media only screen and (max-width: 600px) {
+    .daily-for {
+        flex-direction: column;
+    }
 }

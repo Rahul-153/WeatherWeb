@@ -7,6 +7,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import Time from './components/Time';
 
 function App() {
   const API_key = "8b528b99273fc7895a938db1b8590125";
@@ -43,13 +44,16 @@ function App() {
       <Navbar searchVal={searchVal} setSearchVal={setSearchVal} updateCard={updateCard} />
       <Switch>
         <Route exact path="/">
-          <Single_card apikey={API_key} humidity={hum} temp={temp} icon={icon} wind={wind} city={searchVal} lat={lat} lon={lon} />
+          <div className='home'>
+            <Time />
+            <Single_card apikey={API_key} humidity={hum} temp={temp} icon={icon} wind={wind} city={searchVal} lat={lat} lon={lon} />
+          </div>
         </Route>
         <Route exact path="/daily">
           <div className='daily-for'>
             {data_2.daily.map((e, index) => {
-              if (index !== 0)
-                return <DailyCard apikey={API_key} humidity={e.humidity} tempMin={e.temp.min} tempMax={e.temp.max} icon={e.weather[0].icon} wind={e.wind_speed} lat={lat} lon={lon} sunrise={e.sunrise} sunset={e.sunset} desc={e.weather[0].description} dt={e.dt} key={index} />
+              if (index !== 7)
+                return <DailyCard apikey={API_key} humidity={e.humidity} tempMin={e.temp.min} tempMax={e.temp.max} icon={e.weather[0].icon} wind={e.wind_speed} sunrise={e.sunrise} sunset={e.sunset} desc={e.weather[0].description} index={index} />
             })}
           </div>
         </Route>

@@ -5,7 +5,7 @@ function Single_card(props) {
     <div className='single'>
       <div className="card" >
         <div className="card-body">
-          <h5 className="card-title">Weather in {props.city} </h5>
+          <h5 className="card-title">Weather in {props.city.toUpperCase()} </h5>
           <div> <img src={`https://openweathermap.org/img/wn/${props.icon}@2x.png`} alt="" className="icon" /></div>
           <div className='desc'></div>
           <div className='Humidity'>Humidity:- {props.humidity}%</div>
