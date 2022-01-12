@@ -1,5 +1,5 @@
 .single {
-    margin-left: 40%;
+    margin-left: 50%;
     margin-top: 10rem;
     width: 20%;
     background-size: cover;
@@ -26,5 +26,7 @@
     .single {
         width: 90%;
         margin-left: 1rem;
+        padding-top: 3rem;
+        padding-bottom: 10rem;
     }
 }

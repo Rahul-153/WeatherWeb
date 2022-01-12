@@ -1,5 +1,6 @@
 .home {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .daily-for {
@@ -10,6 +11,9 @@
 
 @media only screen and (max-width: 600px) {
     .daily-for {
+        flex-direction: column;
+    }
+    .home {
         flex-direction: column;
     }
 }

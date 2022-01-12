@@ -1,6 +1,7 @@
 .date-container {
     font-weight: 250;
     padding-left: 5%;
+    padding-top: 14%;
 }
 
 .date-container .time {
@@ -14,4 +15,11 @@
 
 .date-container .date {
     font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .date-container {
+        margin: auto;
+        padding-top: 4rem;
+    }
 }
